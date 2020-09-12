@@ -1,16 +1,21 @@
 {
-  "name": "passioneight/bundle-template",
+  "name": "passioneight/pimcore-utilities",
   "type": "pimcore-bundle",
   "license": "GPL-3.0",
   "autoload": {
     "psr-4": {
-      "Passioneight\\Bundle\\BundleTemplateBundle\\": "src/"
+      "Passioneight\\Bundle\\PimcoreUtilitiesBundle\\": "src/"
     }
   },
+
+  "require": {
+    "passioneight/php-utilities": "^1"
+  },
+
   "extra": {
     "pimcore": {
       "bundles": [
-        "Passioneight\\Bundle\\BundleTemplateBundle\\BundleTemplateBundle"
+        "Passioneight\\Bundle\\PimcoreUtilitiesBundle\\PimcoreUtilitiesBundle"
       ]
     }
   }

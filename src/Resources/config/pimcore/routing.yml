@@ -1,3 +1,0 @@
-#bundle_template:
-#    resource: "@BundleTemplateBundle/Controller/"
-#    type:     annotation

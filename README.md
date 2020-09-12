@@ -1,33 +1,16 @@
-# BundleTemplate - Remove this after setup
-Update the name, namespace and the readme file after using this repository as a template.
-Remove any `BundleTemplate` related code/text afterwards.
+# Pimcore Utilities
+Similar to our [Php Utilities Bundle](https://github.com/passioneight/php-utilities), this bundle provides
+various utility classes - but for **Pimcore**.
 
-> The readme template starts with the next headline.
+###### Table of contents
+- [Installation](/documentation/10_installation.md)
+- [Usage](/documentation/20_usage.md)
+    - [Constants](/documentation/20_usage.md#constants)
+    - [Areabricks](/documentation/20_usage.md#areabricks)
 
-# &lt;name&gt;
-&lt;Description&gt;
+# When should I use this bundle?
+Whenever you create a project using Pimcore.
 
-#### Example use case
-&lt;TODO&gt;
-
-# Installation
-
-```
-COMPOSER_MEMORY_LIMIT=-1 composer require passioneight/<bundle-name>
-```
-
-```
-php bin/console pimcore:bundle:enable BundleTemplateBundle
-```
-
-# Configuration
-&lt;TODO&gt;
-
-# Usage
-&lt;TODO&gt;
-
-# Customization
-&lt;TODO&gt;
-
-# Extending the bundle
-&lt;TODO&gt;
+# Why should I use this bundle?
+This bundle provides a nice and clean way to create translation-keys from constants and some default implementations
+(e.g., for `Areabrick`s).
