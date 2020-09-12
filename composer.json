@@ -9,7 +9,7 @@
   },
 
   "require": {
-    "passioneight/php-utilities": "^1"
+    "passioneight/php-utilities": "^1.0"
   },
 
   "extra": {
