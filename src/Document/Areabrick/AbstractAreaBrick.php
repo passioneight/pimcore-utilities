@@ -2,7 +2,7 @@
 
 namespace Passioneight\Bundle\PimcoreUtilitiesBundle\Document\Areabrick;
 
-use Passioneight\Bundle\PhpUtilitiesBundle\Utility\NamespaceUtility;
+use Passioneight\Bundle\PhpUtilitiesBundle\Service\Utility\NamespaceUtility;
 use Pimcore\Extension\Document\Areabrick\AbstractTemplateAreabrick;
 
 abstract class AbstractAreaBrick extends AbstractTemplateAreabrick
