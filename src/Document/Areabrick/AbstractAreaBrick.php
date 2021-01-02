@@ -19,14 +19,6 @@ abstract class AbstractAreaBrick extends AbstractTemplateAreabrick
     /**
      * @inheritDoc
      */
-    public function hasEditTemplate()
-    {
-        return true;
-    }
-
-    /**
-     * @inheritDoc
-     */
     public function getTemplateLocation()
     {
         return self::TEMPLATE_LOCATION_GLOBAL;
