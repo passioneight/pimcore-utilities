@@ -1,6 +1,9 @@
 # Pimcore Utilities
-Similar to our [Php Utilities Bundle](https://github.com/passioneight/php-utilities), this bundle provides
-various utility classes - but for **Pimcore**.
+When using Pimcore, chances are that the default implementation of some functionality doesn't quite suit your needs. This
+can have many reasons, with the most common one being legacy code that is still around for compatibility reasons. Additionally,
+sometimes a feature is missing completely.
+
+This bundle aims to tackle these problems, by providing more suitable default implementations and adding some functionality.
 
 ###### Table of contents
 - [Installation](/documentation/10_installation.md)
@@ -12,5 +15,5 @@ various utility classes - but for **Pimcore**.
 Whenever you create a project using Pimcore.
 
 # Why should I use this bundle?
-This bundle provides a nice and clean way to create translation-keys from constants and some default implementations
-(e.g., for `Areabrick`s).
+Whenever the default implementation of Pimcore's features do not suit your needs, but the one in this bundle does - or
+if you need any of the provided features.

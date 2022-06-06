@@ -10,7 +10,7 @@ abstract class TranslatableConstant extends Constant
      * @param string $value
      * @return string the translation key.
      */
-    public static function toTranslationKey(string $value)
+    public static function toTranslationKey(string $value): string
     {
         /** @var Constant $class */
         $class = get_called_class();
@@ -20,5 +20,5 @@ abstract class TranslatableConstant extends Constant
     /**
      * @return string the prefix for the translation key.
      */
-    abstract public static function getTranslationKeyPrefix();
+    abstract public static function getTranslationKeyPrefix(): string;
 }

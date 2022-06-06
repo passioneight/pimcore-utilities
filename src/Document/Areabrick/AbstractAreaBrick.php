@@ -3,10 +3,14 @@
 namespace Passioneight\Bundle\PimcoreUtilitiesBundle\Document\Areabrick;
 
 use Passioneight\Bundle\PhpUtilitiesBundle\Service\Utility\NamespaceUtility;
+use Passioneight\Bundle\PimcoreUtilitiesBundle\Traits\TranslatorTrait;
 use Pimcore\Extension\Document\Areabrick\AbstractTemplateAreabrick;
+use Pimcore\Model\Document\Editable\Area\Info;
 
 abstract class AbstractAreaBrick extends AbstractTemplateAreabrick
 {
+    use TranslatorTrait;
+
     /**
      * @inheritDoc
      * @return string the name based on the class.
@@ -27,8 +31,16 @@ abstract class AbstractAreaBrick extends AbstractTemplateAreabrick
     /**
      * @inheritDoc
      */
-    public function getTemplateSuffix()
+    public function getHtmlTagOpen(Info $info)
     {
-        return self::TEMPLATE_SUFFIX_TWIG;
+        return '';
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function getHtmlTagClose(Info $info)
+    {
+        return '';
     }
 }
