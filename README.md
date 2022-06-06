@@ -10,6 +10,9 @@ This bundle aims to tackle these problems, by providing more suitable default im
 - [Usage](/documentation/20_usage.md)
     - [Constants](/documentation/20_usage.md#constants)
     - [Areabricks](/documentation/20_usage.md#areabricks)
+    - [Traits](/documentation/20_usage.md#traits)
+      - [TranslatorTrait](/documentation/20_usage.md#translatortrait)
+      - [AutoSaveTrait](/documentation/20_usage.md#autosavetrait)
 
 # When should I use this bundle?
 Whenever you create a project using Pimcore.
