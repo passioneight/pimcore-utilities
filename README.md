@@ -13,6 +13,7 @@ This bundle aims to tackle these problems, by providing more suitable default im
     - [Traits](/documentation/20_usage.md#traits)
       - [TranslatorTrait](/documentation/20_usage.md#translatortrait)
       - [AutoSaveTrait](/documentation/20_usage.md#autosavetrait)
+    - [Commands](/documentation/20_usage.md#commands)
 
 # When should I use this bundle?
 Whenever you create a project using Pimcore.

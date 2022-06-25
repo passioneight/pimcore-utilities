@@ -141,4 +141,20 @@ class ProductSaveSubscriber implements EventSubscriberInterface
 
 > This trait is only useful if you don't want to turn off the auto-save functionality.
 
+### Commands
+Creating a command is fairly simple, however, most commands will share the same basic implementation. Thus, the
+`AbstractCommand` was implemented. It specifically focuses on adding the well-known `--dry-run` option to any command
+that extends from this class.
+
+> Note use `$this->isDryRun()` to check if the command was started with the `--dry-run` option, so, the option is actually
+> considered in your code.
+
+An additional call to `$this->enableDryRun()` is required in the `initialize` method. If this call is skipped, the command
+will abort with a `LogicException`. As a best practice, always implement the dry-run logic first, then
+call `$this->enableDryRun()`.
+
+> This behaviour is by design, to avoid accidentally adding the `--dry-run` option without actually implementing the dry-run
+> functionality. It will decrease the chance of another team member thinking they are executing the command in dry-run mode
+> when it is not implemented.
+
 ### [Back to Overview](/README.md)
