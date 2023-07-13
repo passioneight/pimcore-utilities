@@ -2,15 +2,11 @@
 
 namespace Passioneight\Bundle\PimcoreUtilitiesBundle\Traits;
 
-use Pimcore\Event\Model\DataObjectEvent;
+use Pimcore\Event\Model\ElementEventInterface;
 
 trait AutoSaveTrait
 {
-    /**
-     * @param DataObjectEvent $event
-     * @return bool
-     */
-    protected function isAutoSaveEvent(DataObjectEvent $event): bool
+    protected function isAutoSaveEvent(ElementEventInterface $event): bool
     {
         return $event->hasArgument('isAutoSave') && $event->getArgument('isAutoSave');
     }
